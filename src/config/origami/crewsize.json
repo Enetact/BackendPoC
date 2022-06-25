@@ -1,0 +1,18 @@
+[
+    {
+        "peopleOnJob":"1",
+        "factor":"1"
+    },
+    {
+        "peopleOnJob":"2",
+        "factor":"1.55"
+    },
+    {
+        "peopleOnJob":"3",
+        "factor":"1.95"
+    },
+    {
+        "peopleOnJob":"4",
+        "factor":"2.3"
+    }
+]

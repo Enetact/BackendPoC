@@ -1,0 +1,34 @@
+[
+    {
+        "category":"Building and walls",
+        "factor":"0.75"
+    },
+    {
+        "category":"Cabinets and countertops",
+        "factor":"0.6"
+    },
+    {
+        "category":"Electrical",
+        "factor":"1.5"
+    },
+    {
+        "category":"Flooring and tiling",
+        "factor":"1"
+    },
+    {
+        "category":"Heating and cooling",
+        "factor":"2"
+    },
+    {
+        "category":"Installation and assembly",
+        "factor":"1"
+    },
+    {
+        "category":"Plumbing and fixtures",
+        "factor":"7"
+    },
+    {
+        "category":"Yard and outdoors",
+        "factor":"1.2"
+    }
+]

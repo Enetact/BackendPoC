@@ -1,0 +1,14 @@
+module.exports.authController = require('./auth.controller');
+module.exports.userController = require('./user.controller');
+module.exports.quotationController = require('./quotation.controller');
+module.exports.stateController = require('./state.controller');
+module.exports.jobDurationController = require('./jobduration.controller');
+module.exports.jobCategoryController = require('./jobcategory.controller');
+module.exports.crewController = require('./crew.controller');
+module.exports.policyController = require('./policy.controller');
+module.exports.limitController = require('./limit.controller');
+module.exports.completeProjectController = require('./completeproject.controller');
+module.exports.memberController = require('./member.controller');
+module.exports.paymentController = require('./payment.controller');
+module.exports.programController = require('./program.controller');
+module.exports.faqController = require('./faq.controller');

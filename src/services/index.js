@@ -1,0 +1,16 @@
+module.exports.authService = require('./auth.service');
+module.exports.tokenService = require('./token.service');
+module.exports.userService = require('./user.service');
+module.exports.origamiService = require('./origami.service');
+module.exports.quotationService = require('./quotation.service');
+module.exports.stateService = require('./state.service');
+module.exports.jobDurationService = require('./jobduration.service');
+module.exports.jobCategoryService = require('./jobcategory.service');
+module.exports.crewSizeService = require('./crewsize.service');
+module.exports.policyService = require('./policy.service');
+module.exports.limitService = require('./limit.service');
+module.exports.completeProjectService = require('./completeproject.service');
+module.exports.memberService = require('./member.service');
+module.exports.paymentService = require('./payment.service');
+module.exports.programService = require('./program.service');
+module.exports.faqService = require('./faq.service');

@@ -1,0 +1,46 @@
+services:
+
+  app:
+    # build or use latest image
+    image: mission/quote-api
+    # when image not present or '--build' option used, build a new image
+    build:
+      context: .
+    # container dependencies
+    depends_on:
+      - db
+    # override application configuration
+    environment:
+      MONGODB_URL: mongodb://missionapi:Miss10Ns3cure!@db:27017/mission
+    networks:
+      - mission-net
+    # map ports
+    ports:
+    - "4000:443"
+    restart: unless-stopped
+
+  db:
+    # use MongoDB from Docker Hub
+    image: mongo:5.0
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: admin
+    networks:
+      - mission-net
+    # optionally expose MongoDB default port on 27017 to use Mongo shell
+    ports:
+      - "27017:27017"
+    restart: unless-stopped
+    volumes:
+      # persistent MongoDB data volumes
+      - mission-data-db:/data/db
+      - ./etc/docker/mongo/init:/docker-entrypoint-initdb.d:ro
+
+volumes:
+  # persistend Docker volume for MongoDB data
+  mission-data-db:
+
+networks:
+  # Docker network for the application
+  mission-net:
+  
